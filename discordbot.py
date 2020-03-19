@@ -18,7 +18,7 @@ async def hello(ctx):
     await ctx.send('Hello! Apexキルレ0.3の会botだよ〜')
 
 @bot.command()
-async def help(ctx):
+async def helps(ctx):
     await ctx.send('APEXキルレ0.3の会botだよ〜\n
                     > コマンドリスト\n
                     > `!ap03 hello` : 挨拶をするよ〜\n
