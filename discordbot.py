@@ -21,4 +21,9 @@ async def hello(ctx):
 async def helps(ctx):
     await ctx.send('APEXキルレ0.3の会botだよ〜\n> コマンドリスト\n> `!ap03 hello` : 挨拶をするよ〜\n> `!ap03 help`  : 今表示しているやつだよ\n> `!ap03 info`  : 案内を表示するよ〜\n')
 
+@bot.event
+async def on_member_join(member):
+    rep = f'{member.mention} ようこそ!APEXキルレサーバーへ！\n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> **全般**カテゴリより**id交換**のチャンネルに*oringin*または*ps*をかくとid交換できるかも！？！？'
+    await member.send(rep)
+    
 bot.run(token)
