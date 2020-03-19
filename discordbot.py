@@ -19,10 +19,6 @@ async def hello(ctx):
 
 @bot.command()
 async def helps(ctx):
-    await ctx.send('APEXキルレ0.3の会botだよ〜\n
-                    > コマンドリスト\n
-                    > `!ap03 hello` : 挨拶をするよ〜\n
-                    > `!ap03 help`  : 今表示しているやつだよ\n
-                    > `!ap03 info`  : 案内を表示するよ〜\n')
+    await ctx.send('APEXキルレ0.3の会botだよ〜\n> コマンドリスト\n> `!ap03 hello` : 挨拶をするよ〜\n> `!ap03 help`  : 今表示しているやつだよ\n> `!ap03 info`  : 案内を表示するよ〜\n')
 
 bot.run(token)
