@@ -24,7 +24,7 @@ async def helps(ctx):
 @bot.command()
 async def info(ctx):
     rep = f'ようこそ!APEXキルレサーバーへ！\n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> **全般**カテゴリより**id交換**のチャンネルに*oringin*または*ps*をかくとid交換できるかも！？！？'
-    await mctx.send(rep)
+    await ctx.send(rep)
     
 @bot.event
 async def on_member_join(member):
