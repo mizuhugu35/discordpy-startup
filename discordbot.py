@@ -23,12 +23,12 @@ async def helps(ctx):
 
 @bot.command()
 async def info(ctx):
-    rep = f'ようこそ!APEXキルレサーバーへ！\n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> **全般**カテゴリより**id交換**のチャンネルに*oringin*または*ps*をかくとid交換できるかも！？！？'
+    rep = f'ようこそ!APEXキルレサーバーへ！\n\n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> **全般**カテゴリより**id交換**のチャンネルに:oringin_id:ORIGIN IDまたは:ps_id:PS IDをかくとid交換できるかも！？！？'
     await ctx.send(rep)
     
 @bot.event
 async def on_member_join(member):
-    rep = f'{member.mention} ようこそ!APEXキルレサーバーへ！\n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> **全般**カテゴリより**id交換**のチャンネルに*oringin*または*ps*をかくとid交換できるかも！？！？'
+    rep = f'{member.mention} ようこそ!APEXキルレサーバーへ！\n\n> \n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> \n> **全般**カテゴリより**id交換**のチャンネルに*oringin*または*ps*をかくとid交換できるかも！？！？'
     CHANNEL_ID = 680045070438629380
     channel = bot.get_channel(CHANNEL_ID)  
     await channel.send(rep)
