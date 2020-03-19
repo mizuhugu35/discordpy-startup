@@ -18,7 +18,11 @@ async def hello(ctx):
     await ctx.send('Hello! Apexキルレ0.3の会botだよ〜')
 
 @bot.command()
-async def show_members(ctx):
-    await ctx.send(message.guild.members)
+async def help(ctx):
+    await ctx.send('APEXキルレ0.3の会botだよ〜\n
+                    > コマンドリスト\n
+                    > `!ap03 hello` : 挨拶をするよ〜\n
+                    > `!ap03 help`  : 今表示しているやつだよ\n
+                    > `!ap03 info`  : 案内を表示するよ〜\n')
 
 bot.run(token)
