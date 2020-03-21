@@ -25,21 +25,21 @@ async def helps(ctx):
 async def info(ctx):
     rep = f'ようこそ!APEXキルレ0.3サーバーへ！\n\n> \n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> \n> **全般**カテゴリより**id交換**のチャンネルに :origin_id: *ORIGIN ID*または :ps_id: *PD ID*をかくとid交換できるかも！？！？'
     await ctx.send(rep)
-   
-@bot.event
-async def on_message(message):
-   if message.content.startswith('!ap add '):
-        args = message.content.split()
-        unm  = message.author.mentions
-        uid  = args[2]
-        CHANNEL_ID = 680449983425675280
-        channel = bot.get_channel(CHANNEL_ID)  
-        rep = f'{unm} {uid}'
-        await channel.send(rep)
-        
-   elif bot.user in message.mentions:
-        reply = f'{message.author.mention} なにかお困りでしたら`!ap helps`とタイプしてみてね！'
-        await message.channel.send(reply) # 返信メッセージを送信
+
+#@bot.event
+#async def on_message(message):
+#   if message.content.startswith('!ap add '):
+#        args = message.content.split()
+#        unm  = message.author.mentions
+#        uid  = args[2]
+#        CHANNEL_ID = 680449983425675280
+#        channel = bot.get_channel(CHANNEL_ID)  
+#        rep = f'{unm} {uid}'
+#        await channel.send(rep)
+#        
+#   elif bot.user in message.mentions:
+#        reply = f'{message.author.mention} なにかお困りでしたら`!ap helps`とタイプしてみてね！'
+#        await message.channel.send(reply) # 返信メッセージを送信
 
 @bot.event
 async def on_member_join(member):
