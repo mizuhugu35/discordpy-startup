@@ -26,6 +26,11 @@ async def info(ctx):
     rep = f'ようこそ!APEXキルレ0.3サーバーへ！\n\n> \n> **システム**カテゴリの**プラットフォーム選択**よりプラットフォームが選択できるよ！\n> \n> **全般**カテゴリより**id交換**のチャンネルに :origin_id: *ORIGIN ID*または :ps_id: *PD ID*をかくとid交換できるかも！？！？'
     await ctx.send(rep)
 
+@bot.command()
+async def sakai(ctx):
+    rep = f'*sakai*はだめです！！！だめですオワコン。おわおわり。'
+    awiat ctx.send(rep)
+    
 #@bot.event
 #async def on_message(message):
 #   if message.content.startswith('!ap add '):
